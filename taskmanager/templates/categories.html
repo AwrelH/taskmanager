@@ -11,4 +11,22 @@
     </div>
 </div>
 
+
+<div class="row">
+    {% for  category in categories %}
+    <div class="col s12 m6 l3">
+      <div class="card  deep-purple lighten-4 center-align darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">{{ category.category_name }}</span>
+          
+        </div>
+        <div class="card-action">
+          <a href="#" class="btn yellow accent-4 black-text">Edit</a>
+          <a href="#" class="btn red accent-1 black-text">Delete</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
 {% endblock %}
