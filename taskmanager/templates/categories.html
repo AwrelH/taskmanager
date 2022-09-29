@@ -13,7 +13,7 @@
 
 
 <div class="row">
-    {% for  category in categories %}
+    {% for  category in categories| sort(attribute="due_date") %}
     <div class="col s12 m6 l3">
         <div class="card  deep-purple lighten-4 center-align darken-1">
             <div class="card-content white-text">

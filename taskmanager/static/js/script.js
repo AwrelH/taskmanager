@@ -24,4 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // select category
     let selects = document.querySelectorAll('select');
     M.FormSelect.init(selects);
+
+    let collapsible = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(collapsible);
+
   });
